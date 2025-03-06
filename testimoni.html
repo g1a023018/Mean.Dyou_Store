@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean.dyou Store - Makanan Ringan Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Mean.<span>dyou</span> Store</div>
+            <nav>
+                <ul>
+                    <li><button class="menu-btn" onclick="toggleNav()"><img src="image/user.png" alt="User Icon" class="nav-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigasi -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleNav() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show");
+        }
+    </script>
+
+    <main>
+        <section class="testimonials" id="testimonials">
+            <h2 class="section-title">Apa Kata Mereka</h2>
+            <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Keripik pisang dari Mean.dyou Store benar-benar renyah dan tidak berlebihan manisnya. Saya sudah mencoba berbagai merek, tapi ini yang terbaik!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <div class="author-name">Dewi Sartika</div>
+                            <div class="author-title">Pelanggan Setia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Sambal bawangnya enak sekali! Level 3 sudah cukup pedas untuk saya. Bikin nasi putih jadi ludes dalam sekejap. Packing aman dan pengiriman cepat.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <div class="author-name">Budi Santoso</div>
+                            <div class="author-title">Food Blogger</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Pesan hampers untuk acara kantor dan semua kolega saya suka! Varian produknya banyak dan kemasannya cantik. Pasti akan pesan lagi!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <div class="author-name">Linda Wijaya</div>
+                            <div class="author-title">Event Organizer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mean.dyou Store. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

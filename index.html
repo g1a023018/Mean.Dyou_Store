@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean.dyou Store - Makanan Ringan Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Mean.<span>dyou</span> Store</div>
+            <nav>
+                <ul>
+                    <li><button class="menu-btn" onclick="toggleNav()"><img src="image/user.png" alt="User Icon" class="nav-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigasi -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleNav() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show");
+        }
+    </script>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Makanan Ringan Berkualitas Premium</h1>
+                <p>Mean.dyou Store menyediakan makanan ringan terbaik dengan bahan-bahan berkualitas tinggi. Nikmati cemilan lezat untuk setiap momen spesial Anda.</p>
+                <a href="produk.html" class="btn">Lihat Produk</a>
+            </div>
+        </section>
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <h2 class="section-title">Produk Unggulan Kami</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="image/19.jpg" alt="yupi">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Yupi</h3>
+                        <p class="product-price">Rp 35.000</p>
+                        <p class="product-description">Tekstur yang kenyal lembut dan membuat nyaman dimulut.</p>
+                        <button class="cart-btn">Tambah ke Keranjang</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="image/kueTat.jpg" alt="kue tat">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Kue Tat</h3>
+                        <p class="product-price">Rp 45.000</p>
+                        <p class="product-description">Makanan khas Bengkulu Yang Teksturnya lembut dan Krispi.</p>
+                        <button class="cart-btn">Tambah ke Keranjang</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="image/popcron.jpg" alt="Popcron">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Popcron</h3>
+                        <p class="product-price">Rp 40.000</p>
+                        <p class="product-description">Popcron kering yang renyah dengan cita rasa coklat premium dan rasa lainnya.</p>
+                        <button class="cart-btn">Tambah ke Keranjang</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="image/KuePecah.jpg" alt="kue pecah">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Kue Pecah</h3>
+                        <p class="product-price">Rp 28.000</p>
+                        <p class="product-description">Kue pecah mekar di oven deng tekstur  terbaik.</p>
+                        <button class="cart-btn">Tambah ke Keranjang</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Penwaran -->
+        <section class="special-offers" id="offers">
+            <h2 class="section-title">Penawaran Spesial</h2>
+            <div class="offers-container">
+                <article class="offer-card">
+                    <div class="offer-icon">🎁</div>
+                    <h3 class="offer-title">Paket Hemat</h3>
+                    <p class="offer-description">Beli 3 produk apa saja, dapatkan diskon 10%. Berlaku untuk semua jenis produk.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon">🚚</div>
+                    <h3 class="offer-title">Gratis Ongkir</h3>
+                    <p class="offer-description">Nikmati gratis ongkir untuk pembelian minimal Rp 100.000 ke seluruh Indonesia.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </article>
+                <article class="offer-card">
+                    <div class="offer-icon">🎂</div>
+                    <h3 class="offer-title">Hampers Spesial</h3>
+                    <p class="offer-description">Hampers untuk berbagai acara: ulang tahun, pernikahan, atau acara spesial lainnya.</p>
+                    <a href="#" class="btn">Lihat Detail</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">Mean.<span>dyou</span> Store</div>
+                <p>Menyediakan makanan ringan berkualitas sejak 2018. Kami berkomitmen menghadirkan cemilan terbaik untuk setiap momen spesial Anda.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="index.html#offers">Penawaran</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <!-- Akan segerah dikembanngkan lagi-->
+            <div class="footer-links">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Dapatkan info terbaru dan diskon spesial langsung ke email Anda.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email Anda">
+                    <button type="submit" class="newsletter-btn">Daftar</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mean.dyou Store. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

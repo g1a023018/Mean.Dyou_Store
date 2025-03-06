@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean.dyou Store - Makanan Ringan Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Mean.<span>dyou</span> Store</div>
+            <nav>
+                <ul>
+                    <li><button class="menu-btn" onclick="toggleNav()"><img src="image/user.png" alt="User Icon" class="nav-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigasi -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <section class="kontak">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form>
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function toggleNav() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show");
+        }
+    </script>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mean.dyou Store. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

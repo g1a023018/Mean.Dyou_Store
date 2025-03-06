@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean.dyou Store - Profil Pengguna</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Mean.<span>dyou</span> Store</div>
+            <nav>
+                <ul>
+                    <li><button class="menu-btn" onclick="toggleNav()"><img src="image/user.png" alt="User Icon" class="nav-icon"></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigasi -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleNav() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show");
+        }
+    </script>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Profil Pengguna</h1>
+        <p>Kelola informasi pribadi, pesanan, dan wishlist Anda</p>
+    </section>
+    
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <!-- Sidebar -->
+        <div class="profile-sidebar">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <img src="image/-a.jpg" alt="Foto Profil">
+                </div>
+                <h2 class="profile-name">Herlita</h2>
+                <span class="profile-status">Member Premium</span>
+            </div>
+            
+            <div class="profile-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="profile-nav-icon">👤</span>
+                            Informasi Pribadi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="profile-nav-icon">🛒</span>
+                            Riwayat Pesanan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Wishlist">
+                            <span class="profile-nav-icon">❤️</span>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#alamat">
+                            <span class="profile-nav-icon">📍</span>
+                            Alamat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pasword">
+                            <span class="profile-nav-icon">🔒</span>
+                            Ubah Password
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#poin">
+                            <span class="profile-nav-icon">📊</span>
+                            Poin & Reward
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#seting">
+                            <span class="profile-nav-icon">⚙️</span>
+                            Pengaturan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#back">
+                            <span class="profile-nav-icon">🚪</span>
+                            Keluar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="profile-content">
+            <!-- User Information -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h3 class="section-title">Informasi Pribadi</h3>
+                    <button class="btn-edit">Edit Profil</button>
+                </div>
+                <div class="section-content">
+                    <div class="user-info">
+                        <div>
+                            <div class="info-group">
+                                <span class="info-label">Nama Lengkap</span>
+                                <span class="info-value">Herlita</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">hlita7636@gmail.com</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Nomor Telepon</span>
+                                <span class="info-value">+62 831-2459-6441</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info-group">
+                                <span class="info-label">Tanggal Lahir</span>
+                                <span class="info-value">13 juni 2005</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Jenis Kelamin</span>
+                                <span class="info-value">Perempuan</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Bergabung Sejak</span>
+                                <span class="info-value">10 Januari 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order History -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h3 class="section-title">Riwayat Pesanan Terbaru</h3>
+                    <a href="#" class="btn-edit">Lihat Semua</a>
+                </div>
+                <div class="section-content">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>ID Pesanan</th>
+                                <th>Tanggal</th>
+                                <th>Produk</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#MD20250215</td>
+                                <td>15 Feb 2025</td>
+                                <td>Keripik Pisang Premium (3)</td>
+                                <td>Rp 75.000</td>
+                                <td><span class="order-status status-completed">Selesai</span></td>
+                                <td><a href="#" class="order-action">Detail</a></td>
+                            </tr>
+                            <tr>
+                                <td>#MD20250128</td>
+                                <td>28 Jan 2025</td>
+                                <td>Kacang Mete Bakar (1), Sambal Bawang Kriuk (2)</td>
+                                <td>Rp 115.000</td>
+                                <td><span class="order-status status-shipped">Dikirim</span></td>
+                                <td><a href="#" class="order-action">Lacak</a></td>
+                            </tr>
+                            <tr>
+                                <td>#MD20250105</td>
+                                <td>05 Jan 2025</td>
+                                <td>Hamper Spesial (1)</td>
+                                <td>Rp 250.000</td>
+                                <td><span class="order-status status-processing">Diproses</span></td>
+                                <td><a href="#" class="order-action">Detail</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Wishlist -->
+            <div class="profile-section" id="wishlist">
+                <div class="section-header">
+                    <h3 class="section-title">Wishlist</h3>
+                    <a href="#" class="btn-edit">Lihat Semua</a>
+                </div>
+                <div class="section-content">
+                    <div class="wishlist-grid">
+                        <!-- Wishlist Item 1 -->
+                        <div class="wishlist-item">
+                            <div class="wishlist-image">
+                                <img src="image/15.jpg" alt="Brownies Kering">
+                            </div>
+                            <div class="wishlist-info">
+                                <h4 class="wishlist-title">Brownies Kering</h4>
+                                <p class="wishlist-price">Rp 40.000</p>
+                                <div class="wishlist-actions">
+                                    <button class="btn-add-cart">Tambah ke Keranjang</button>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Wishlist Item 2 -->
+                        <div class="wishlist-item">
+                            <div class="wishlist-image">
+                                <img src="image/17.jpg" alt="manisan">
+                            </div>
+                            <div class="wishlist-info">
+                                <h4 class="wishlist-title">Manisan Anggur</h4>
+                                <p class="wishlist-price">Rp 80.000</p>
+                                <div class="wishlist-actions">
+                                    <button class="btn-add-cart">Tambah ke Keranjang</button>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Wishlist Item 3 -->
+                        <div class="wishlist-item">
+                            <div class="wishlist-image">
+                                <img src="image/1.jpg" alt="Stik Keju Premium">
+                            </div>
+                            <div class="wishlist-info">
+                                <h4 class="wishlist-title">Stik Keju Premium</h4>
+                                <p class="wishlist-price">Rp 28.000</p>
+                                <div class="wishlist-actions">
+                                    <button class="btn-add-cart">Tambah ke Keranjang</button>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Wishlist Item 4 -->
+                        <div class="wishlist-item">
+                            <div class="wishlist-image">
+                                <img src="image/3.jpg" alt="Nastar Homemade">
+                            </div>
+                            <div class="wishlist-info">
+                                <h4 class="wishlist-title">Nastar Homemade</h4>
+                                <p class="wishlist-price">Rp 70.000</p>
+                                <div class="wishlist-actions">
+                                    <button class="btn-add-cart">Tambah ke Keranjang</button>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Address -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h3 class="section-title">Alamat</h3>
+                    <button class="btn-edit">Tambah Alamat</button>
+                </div>
+                <div class="section-content">
+                    <!-- Address Card 1 -->
+                    <div class="address-card">
+                        <span class="address-type">Utama</span>
+                        <h4 class="address-name">Rumah</h4>
+                        <p class="address-details">
+                            Lita<br>
+                            jl.Putri Gading Cempaka 27,<br>
+                            Penurunan, Ratu Samban, <br>
+                            Bengkulu, Bengkulu,<br>
+                            Indonesia<br>
+                            +62 8312 2459 6441
+                        </p>
+                        <div class="address-actions">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-remove">Hapus</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Address Card 2 -->
+                    <div class="address-card">
+                        <h4 class="address-name">Rumah</h4>
+                        <p class="address-details">
+                            Jemi Aditia<br>
+                            jl.enggano, RT 10/RW 09<br>
+                            Palembang, Sumatera Selatan,<br>
+                            Indonesia<br>
+                            +62 853-7869-2284
+                        </p>
+                        <div class="address-actions">
+                            <button class="btn-edit">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mean.dyou Store. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
